@@ -22,9 +22,9 @@ class PricePipeline(object):
         else:
             raise DropItem("Missing price in %s" % item)
 
-    def process_item(self, item, spider):
-        if item.get('tags'):
-        	item['tags'] = item['tags'].split(',')
-        	return item
-        else:
-            raise DropItem("Missing tags in %s" % item)
+    # def process_item(self, item, spider):
+    #     if item.get('tags'):
+    #     	item['tags'] = item['tags'].split(',')
+    #     	return item
+    #     else:
+    #         raise DropItem("Missing tags in %s" % item)
